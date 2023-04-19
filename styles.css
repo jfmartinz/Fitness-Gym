@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.content {
+    text-align: center;
+    height: 100px;
+}
+
+.content p {
+    color: #fff;
+    line-height: 1.8;
+}
+
+/* target the "current hours of operation: " */
+p:first-of-type{
+    font-size: 18px;
+}
+
+.content h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 2px;
+
+}
+
+.logo-container {
+    width: 150px;
+    margin: 3rem auto;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-container {
+    margin: 2.5rem 0;
+}
+
+/* styles for the btns' */
+
+a:nth-child(1) {
+    text-decoration: none;
+    color: #000;
+    background-color: #ffc63d;
+    text-transform: uppercase;
+    padding: 1.3rem 2rem;
+    margin-right: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+}
+
+a:nth-child(2) {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.3rem 2rem;
+    font-weight: 700;
+    border: 1px solid #ffc63d;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+}
+
+a:nth-child(1):hover {
+    background-color: #fff;
+    color: #000;
+}
+
+a:nth-child(2):hover {
+    background-color: #fff;
+    color: #000;
+    border-color: transparent;
+}
+
+/* "Image from Freepik link" */
+a:last-child {
+    color: #fff;
+    text-decoration: none;
+}
+
+span {
+    text-decoration: underline;
+}
+
+
+/* responsiveness of the buttons */
+
+
+@media (max-width: 768px) {
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    a:nth-child(1) {
+        margin: 2rem 0 1rem;
+    }
+
+    a:nth-child(2) {
+        margin-bottom: 0.75rem;
+    }
+
+
+}
